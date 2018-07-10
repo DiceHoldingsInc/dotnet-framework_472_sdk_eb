@@ -6,4 +6,4 @@ SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPref
 
 # Web Deploy Download: https://go.microsoft.com/fwlink/?LinkId=209116
 RUN Invoke-WebRequest -UseBasicParsing https://go.microsoft.com/fwlink/?LinkId=209116 -OutFile webdeploy.msi
-    Start-Process webdeploy.msi -ArgumentList '/quiet', '/qn' -Wait
+RUN Start-Process webdeploy.msi -ArgumentList '/quiet', '/qn' -Wait
