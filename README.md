@@ -11,6 +11,9 @@ A Dockerfile that can be used to build and package AWS ElasticBeanstalk applicat
 # Build and tag the Docker image (change the tag/version as appropriate)
 docker build . -t diceholdingsinc/dotnet-framework_472_sdk_eb:1.0.0
 
+# Push it to docker cloud repo (public, change the tag/version as appropriate)
+docker push diceholdingsinc/dotnet-framework_472_sdk_eb:1.0.0
+
 # Build a solution
 cd $SOLUTION_DIR
 msbuild
